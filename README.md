@@ -10,9 +10,20 @@ Technologies used:
 * JUnit 5
 * [REST Assured](https://rest-assured.io/) and [Testcontainers](https://testcontainers.com/) (for Spring integration tests using a container)
 
+## Setup Postgress ( I am using Mac M1)
+- Download post gress from https://postgresapp.com/downloads.html 
+- Run following command mentioned in doucmentation to setup psql path 
+```
+sudo mkdir -p /etc/paths.d &&
+echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+```
+- Now postgress is installed and you can set it up as https://www.youtube.com/watch?v=wTqosS71Dc4 
+- connect to poastgress and setup passwrod as 
+```
+ALTER USER sanjaytiwari PASSWORD 'sanjaytiwari';
+```
 ## How to run it
 ```
-
 $ git clone https://github.com/tiwarisanjay/spring-boot-jpa-postgresql.git
 
 $ cd spring-boot-jpa-postgresql
